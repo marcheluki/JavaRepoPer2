@@ -1,0 +1,47 @@
+# Maven target directory
+/target/
+
+# IntelliJ IDEA files
+/.idea/
+/*.iml
+
+# Eclipse files
+/.classpath
+/.project
+/.settings/
+
+# VS Code files
+/.vscode/
+
+# Logs
+*.log
+/logs/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Java compiled files
+*.class
+
+# Environment and configuration files
+*.env
+src/main/resources/application.properties
+
+# Oracle Wallet files
+Wallet_bookies/
+
+# Dependency directories
+/.mvn/
+.mvn/wrapper/maven-wrapper.jar
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Generated files
+*.jar
+*.war
+*.ear
