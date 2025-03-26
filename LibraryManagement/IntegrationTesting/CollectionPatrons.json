@@ -1,0 +1,80 @@
+{
+    "info": {
+      "_postman_id": "d0e914a2-2f55-43fe-828f-0c11b8c7a5fc",
+      "name": "Patron API Integration",
+      "description": "API for managing patrons in the library system.",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "_exporter_id": "3186033"
+    },
+    "item": [
+      {
+        "name": "Get All Patrons",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": "http://localhost:8080/api/patrons",
+          "description": "Retrieve a list of all patrons."
+        },
+        "response": []
+      },
+      {
+        "name": "Get Patron By ID",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": "http://localhost:8080/api/patrons/:id",
+          "description": "Retrieve a patron by their ID."
+        },
+        "response": []
+      },
+      {
+        "name": "Create Patron",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"name\":\"Juan Pérez\",\"email\":\"juan@example.com\",\"phone\":\"555-1234\"}"
+          },
+          "url": "http://localhost:8080/api/patrons",
+          "description": "Create a new patron."
+        },
+        "response": []
+      },
+      {
+        "name": "Update Patron",
+        "request": {
+          "method": "PUT",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"name\":\"Updated Name\",\"email\":\"updated@example.com\",\"phone\":\"555-5678\"}"
+          },
+          "url": "http://localhost:8080/api/patrons/:id",
+          "description": "Update a patron by their ID."
+        },
+        "response": []
+      },
+      {
+        "name": "Delete Patron",
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "url": "http://localhost:8080/api/patrons/:id",
+          "description": "Delete a patron by their ID."
+        },
+        "response": []
+      }
+    ]
+  }
+  
